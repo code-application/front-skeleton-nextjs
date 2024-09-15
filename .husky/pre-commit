@@ -1,0 +1,2 @@
+# ステージングされているファイルに対して静的解析とフォーマットを行う
+pnpm exec biome check --fix --staged
