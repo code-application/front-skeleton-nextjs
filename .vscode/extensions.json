@@ -30,7 +30,6 @@
     "sonarsource.sonarlint-vscode",
     "bradlc.vscode-tailwindcss",
     "wayou.vscode-todo-highlight",
-    "shardulm94.trailing-spaces",
-    "mike-co.import-sorter"
+    "shardulm94.trailing-spaces"
   ]
 }
