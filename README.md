@@ -6,11 +6,11 @@
 - [実行方法](#実行方法)
 - [プロジェクトの技術選定](#プロジェクトの技術選定)
   - [プロダクションコードに必要なライブラリ](#プロダクションコードに必要なライブラリ)
-    - [ランタイム](#ランタイム)
+    - [ランタイムなど](#ランタイムなど)
     - [フレームワーク](#フレームワーク)
   - [開発・CI/CD・テスト関連のツール](#開発cicdテスト関連のツール)
-    - [ランタイム・ツール管理](#ランタイムツール管理)
-    - [パッケージ管理](#パッケージ管理)
+    - [ランタイム・パッケージ管理](#ランタイムパッケージ管理)
+    - [静的解析・フォーマッター](#静的解析フォーマッター)
 
 ## インストール方法
 
@@ -56,26 +56,35 @@ pnpm dev
 
 ### プロダクションコードに必要なライブラリ
 
-#### ランタイム
+実行に影響があるため、バージョンの指定には注意すること。
+
+#### ランタイムなど
 
 - **[Node.js](https://nodejs.org/ja/)**
   [リリース一覧](https://nodejs.org/en/about/previous-releases/)にある ACTIVE LTS のバージョンをインストールする
+- **[TypeScript](https://www.typescriptlang.org/)**
+  JavaScript のスーパーセットである TypeScript を使用する
+  [リリース一覧](https://github.com/microsoft/TypeScript/releases/)にある最新の Stable バージョンをインストールする
 
 #### フレームワーク
 
 - **[Next.js](https://nextjs.org/)**
   React ベースのフレームワーク
+  [リリース一覧](https://github.com/vercel/next.js/releases/)にある Latest バージョンをインストールする
 - **[Tailwind CSS](https://tailwindcss.com/)**
   CSS フレームワーク
+  [リリース一覧](https://github.com/tailwindlabs/tailwindcss/releases/)にある Latest バージョンをインストールする
 
 ### 開発・CI/CD・テスト関連のツール
 
-#### ランタイム・ツール管理
+#### ランタイム・パッケージ管理
 
 - **[Volta](https://volta.sh/)**
-  プロジェクトの Node.js バージョンを管理するためのツール
-
-#### パッケージ管理
-
+  プロジェクトの Node.js 、Pnpm のバージョンを管理するためのツール
 - **[Pnpm](https://pnpm.io/)**
   プロジェクトのパッケージ管理を行うためのツール
+
+#### 静的解析・フォーマッター
+
+- **[Biome](https://biomejs.dev/ja/)**
+  静的解析・フォーマッターを統合したツール
