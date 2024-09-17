@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "next dev",
+    "dev:local": "cross-env PROFILE=local next dev",
+    "dev:mock": "cross-env PROFILE=mock next dev",
     "build": "next build",
     "start": "next start",
     "check": "biome check --fix",
@@ -26,13 +27,14 @@
     "@types/node": "20.16.5",
     "@types/react": "18.3.5",
     "@types/react-dom": "18.3.0",
+    "cross-env": "7.0.3",
     "husky": "9.1.6",
     "jest": "29.7.0",
     "jest-environment-jsdom": "29.7.0",
     "postcss": "8.4.47",
     "tailwindcss": "3.4.1",
     "ts-jest": "29.2.5",
-    "ts-node": "^10.9.2",
+    "ts-node": "10.9.2",
     "typescript": "5.6.2"
   },
   "volta": {
