@@ -9,6 +9,7 @@
     "start": "next start",
     "check": "biome check --fix",
     "lint": "biome lint --fix",
+    "lint-fix-unsafe": "biome lint --fix --unsafe",
     "format": "biome format --fix",
     "check-for-ci": "biome ci",
     "prepare": "husky"
@@ -31,6 +32,7 @@
     "husky": "9.1.6",
     "jest": "29.7.0",
     "jest-environment-jsdom": "29.7.0",
+    "msw": "2.3.5",
     "postcss": "8.4.47",
     "tailwindcss": "3.4.1",
     "ts-jest": "29.2.5",
@@ -40,5 +42,8 @@
   "volta": {
     "node": "20.17.0",
     "pnpm": "9.10.0"
+  },
+  "msw": {
+    "workerDirectory": ["public"]
   }
 }

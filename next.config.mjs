@@ -2,7 +2,11 @@ import fs from "node:fs";
 import path from "node:path";
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  experimental: {
+    instrumentationHook: true,
+  },
+};
 
 /**
  * 環境変数を読み込む

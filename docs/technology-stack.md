@@ -51,6 +51,9 @@
 - **[React Testing Library](https://testing-library.com/)**  
   React コンポーネントのテストを行うためのライブラリ。  
   （選定理由）Reactコンポーネントのテストを行うためにJestと組み合わせて使用するライブラリとして、React Testing Libraryがデファクトスタンダードであるため。  
+- **[MSW](https://mswjs.io/)**  
+  APIのモックを作成するためのライブラリ。  
+  （選定理由）従来はExpress.jsでモックサーバーを立てていたのを別プロセスを実行することなく実現できるため。  
 
 ### コミットメッセージ管理とスタイル統一
 

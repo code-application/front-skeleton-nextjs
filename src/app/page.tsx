@@ -1,8 +1,20 @@
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
+  const message = await (async () => {
+    try {
+      const response = await fetch("https://example.com/hello");
+      const responseBody = await response.json();
+      return responseBody.message;
+    } catch (error) {
+      console.error("API の呼び出しに失敗しました: ", error);
+      return "Dummy message";
+    }
+  })();
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <p>message: {message}</p>
       <p>API_BASE_URL: {process.env.NEXT_PUBLIC_API_BASE_URL}</p>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
