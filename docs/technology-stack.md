@@ -60,3 +60,6 @@
 - **[Husky](https://typicode.github.io/husky/)**  
   Git hooks を管理するためのツール。  
   （選定理由）使い慣れてるから。特にこだわりはないので他で代用可能。  
+- **[cz-customizable](https://github.com/leoforfree/cz-customizable/)**  
+  コミットメッセージのスタイルを統一するためのツール。  
+  （選定理由）[Conventinoal Commits](https://www.conventionalcommits.org/ja/v1.0.0/)と[gitmoji](https://gitmoji.dev/)に準拠したコミットメッセージを簡単に書けるため。類似ツールに[git-cz](https://github.com/streamich/git-cz)があるが、改行ができないため却下。  
