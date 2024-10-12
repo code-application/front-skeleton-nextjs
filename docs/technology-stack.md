@@ -25,6 +25,10 @@
   ユーティリティ指向で柔軟なスタイルが適用可能なオープンソースのCSS フレームワーク。  
   （選定理由）UIコンポーネントライブラリだけだと自由度が低いため、デザインの微調整ができるようにCSSのベースとしては Tailwind CSS を採用する。  
   （バージョン）[リリース一覧](https://github.com/tailwindlabs/tailwindcss/releases/)にある Latest バージョンをインストールする。  
+- **[daisyUI](https://daisyui.com/)**  
+  Tailwind CSS のコンポーネントライブラリ。  
+  （選定理由）CSSライブラリだけだと1からコンポーネントを作るのが大変で、しかし拡張ができないと不便なので、Tailwind CSSがベースになっているコンポーネントライブラリが有用だと判断した。  
+  （バージョン）導入時点の最新バージョンをインストールする。[changelog](https://daisyui.com/docs/changelog/)を見る限りSemantic Versioningに従っており、メジャーバージョンを上がるときは特に注意すること。  
 
 ## 開発・CI/CD・テスト関連のツール
 

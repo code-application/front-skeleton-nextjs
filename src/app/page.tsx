@@ -13,15 +13,24 @@ const HomePage: React.FC = async () => {
   })();
 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="p-8">
+      <h1 className="text-2xl font-bold mb-4">Home Page</h1>
       <p>message: {message}</p>
       <p>API_BASE_URL: {process.env.NEXT_PUBLIC_API_BASE_URL}</p>
-      <p>
+      <p className="mb-4">
         <Link
           href="/test-sample"
           className="text-blue-500 underline hover:text-blue-700"
         >
           Go to Test Sample Page
+        </Link>
+      </p>
+      <p>
+        <Link
+          href="/daisyui-sample"
+          className="text-blue-500 underline hover:text-blue-700"
+        >
+          Go to daisyUI Sample Page
         </Link>
       </p>
     </div>
