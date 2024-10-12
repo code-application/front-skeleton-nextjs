@@ -12,8 +12,9 @@
     "lint-fix-unsafe": "biome lint --fix --unsafe",
     "format": "biome format --fix",
     "check-for-ci": "biome ci",
-    "prepare": "husky",
-    "commit": "./node_modules/cz-customizable/standalone.js"
+    "test": "jest",
+    "commit": "./node_modules/cz-customizable/standalone.js",
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "14.2.11",
