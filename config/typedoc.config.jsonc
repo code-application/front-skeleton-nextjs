@@ -1,0 +1,8 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "out": "../build/docs/typedoc",
+  // `entryPoints` には本来 `index.ts` などを指定するが、ディレクトリを指定して `entryPointStrategy` に `expand` を指定することで、指定したディレクトリ以下の全てのファイルをエントリーポイントとして解析する
+  "entryPoints": ["../src"],
+  "entryPointStrategy": "expand",
+  "exclude": ["**/*.spec.ts", "**/*.spec.tsx"]
+}

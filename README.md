@@ -56,6 +56,8 @@ $ pnpm --version
 pnpm run dev:local
 # モックを使って実行
 pnpm run dev:mock
+# ドキュメントを生成
+pnpm run doc
 ```
 
 ---

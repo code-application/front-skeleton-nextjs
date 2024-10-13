@@ -1,6 +1,6 @@
 "use client";
 
-interface ErrorProps {
+export interface ErrorProps {
   error: {
     message: string;
   };

@@ -7,6 +7,7 @@
     "dev:mock": "cross-env PROFILE=mock next dev",
     "build": "next build",
     "start": "next start",
+    "doc": "typedoc --options config/typedoc.config.jsonc",
     "check": "biome check --fix",
     "lint": "biome lint --fix",
     "lint-fix-unsafe": "biome lint --fix --unsafe",
@@ -41,6 +42,7 @@
     "tailwindcss": "3.4.1",
     "ts-jest": "29.2.5",
     "ts-node": "10.9.2",
+    "typedoc": "0.26.9",
     "typescript": "5.6.2"
   },
   "volta": {
