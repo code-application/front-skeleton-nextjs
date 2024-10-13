@@ -53,11 +53,11 @@ $ pnpm --version
 
 ```bash
 # ローカルでの実行
-pnpm run dev:local
+pnpm dev:local
 # モックを使って実行
-pnpm run dev:mock
-# ドキュメントを生成
-pnpm run doc
+pnpm dev:mock
+# ドキュメントを生成（`build/docs/typedoc/index.html` にビルドされる）
+pnpm doc
 ```
 
 ---
@@ -69,5 +69,5 @@ pnpm run doc
 コミットする際は必ず下記のコマンドを使用すること。これによってコミットメッセージのスタイルが統一している。
 
 ```bash
-pnpm run commit
+pnpm commit
 ```
